@@ -1,0 +1,25 @@
+.example-container {
+    width: 100%;
+    height: 100%;
+}
+
+.example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.example-sidenav {
+    padding: 20px;
+}
+
+.navbar {
+    position: fixed;
+}
+
+.wolrd-info {
+    padding-left: 200px;
+    padding-top: 50px;
+    margin-left: 5px;
+}
