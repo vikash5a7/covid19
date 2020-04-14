@@ -1,34 +1,40 @@
-<mat-toolbar color="primary" class="fixed-top ">
-    <button class="menuButton" type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
-        <mat-icon  aria-label="Side nav toggle icon">menu</mat-icon>
-        </button>
-    <h3 style="padding-left: 50px;">Be compassionate! Help those in need like the elderly and poor. They are facing a crisis which we can't even imagine! </h3>
-</mat-toolbar>
-<mat-drawer-container class="example-container" autosize>
-    <mat-drawer #drawer class="example-sidenav" mode="side">
-        <mat-accordion>
-            <mat-expansion-panel style="    padding-top: 60px">
-                <mat-expansion-panel-header>
-                    Indian State
-                </mat-expansion-panel-header>
-                <div *ngFor="let region of indiaData">
-                    <button mat-button>
-                  {{region.loc}}
-                </button>
-                </div>
-            </mat-expansion-panel>
-            <br>
-            <mat-expansion-panel>
-                <mat-expansion-panel-header>
-                    Country
-                </mat-expansion-panel-header>
-                Country name
-            </mat-expansion-panel>
-        </mat-accordion>
-    </mat-drawer>
-    <div class="wolrd-info">
-        <app-world></app-world>
-        <app-india></app-india>
-        <app-displaycountries></app-displaycountries>
+<ul class="nav nav-pills justify-content-center fixed-top navbar-expand-sm bg-light" style="background-color: rgb(126, 110, 99);">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="pill" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#menu1">India</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#menu2">PATIENTS IN INDIA</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#menu2">Facitilities</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#menu2">HELPFUL LINKS</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#menu2">ABOUT</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#menu2">ESSENTIALS</a>
+    </li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane container active" id="home">
+        <div class="wolrd-info">
+            <app-world></app-world>
+            <app-india></app-india>
+            <app-displaycountries></app-displaycountries>
+        </div>
     </div>
-</mat-drawer-container>
+    <div class="tab-pane container fade" id="menu1">
+        <div style="padding-top: 80px;">
+            <app-india></app-india>
+            <app-state-details></app-state-details>
+        </div>
+    </div>
+    <div class="tab-pane container fade" id="menu2">...</div>
+</div>

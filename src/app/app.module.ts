@@ -22,6 +22,10 @@ import {MatCardModule} from '@angular/material/card';
 import { IndiaComponent } from './india/india.component';
 import { DisplaycountriesComponent } from './displaycountries/displaycountries.component';
 import { SearchCountryPipe } from './pipe/search-country.pipe';
+import { StateDetailsComponent } from './state-details/state-details.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FacilitiesComponent } from './facilities/facilities.component';
+import { PatientComponent } from './patient/patient.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +34,10 @@ import { SearchCountryPipe } from './pipe/search-country.pipe';
     IndiaComponent,
     DisplaycountriesComponent,
     SearchCountryPipe,
+    StateDetailsComponent,
+    NavbarComponent,
+    FacilitiesComponent,
+    PatientComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,12 @@
+<nav class="navbar navbar-light bg-light form-inline">
+    <input type="text" class="form-control" placeholder="Search" id="listSearch">
+</nav>
+<div class="card-columns" style="padding-top: 5px;">
+    <div class="card" style="width:300px" *ngFor="let region of indiaData">
+        <div class="card-body">
+            <h4 class="card-title">{{region.loc}}</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+    </div>
+</div>

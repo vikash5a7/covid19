@@ -1,14 +1,13 @@
-<div fxLayoutAlign="center center" style="margin-right: 170px;">
-    <h1>COVID-19 CORONAVIRUS PANDEMIC IN WORLD</h1> <br><br>
-
+<div class="container p-1 my-3 border text-center">
+    <h1>COVID-19 CORONAVIRUS PANDEMIC IN WORLD</h1>
+    <p>Total Case Around the World</p>
 </div>
-<div class="flex-container" fxLayoutAlign="center center">
+<div class="flex-container justify-content-center" style="align-items: center;">
     <div>
         <mat-card style="background-color: rgb(181, 204, 226);">
             <mat-card-title>
                 {{world.cases | number:''}}
             </mat-card-title>
-
             <mat-card-content>
                 Corona Virus Cases
             </mat-card-content>

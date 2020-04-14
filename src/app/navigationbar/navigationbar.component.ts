@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { BackendApiService } from '../services/backend-api.service';
 import { World } from '../model/world';
-import * as $ from "jquery";
 import { Regional } from '../model/regional';
 
 @Component({
@@ -14,6 +13,7 @@ export class NavigationbarComponent {
   world:any;
   region: Regional = new Regional();
   indiaData: [];
+  worldStatus=true;
 
   constructor(private backendApiService : BackendApiService) {
  }
@@ -22,5 +22,9 @@ export class NavigationbarComponent {
     this.indiaData = data.data.regional;
     console.log('Data of india-->'+ this.indiaData);
   })
+}
+removeReminder(region) {
+  console.log('State object is' + region );
+  this.worldStatus=false;
 }
 }
