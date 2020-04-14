@@ -19,11 +19,17 @@ export class BackendApiService {
   public sendGetRequest(){
     return this.httpClient.get(this.GLOBAL_aPI);
   }
+
   public getIndiaData(){
     return this.httpClient.get(this.INDIADATA_API);
   }
+
   public getAllCountriesData(){
     return this.httpClient.get(environment.ALL_COUNTRIES_API);
+  }
+
+  public getAllDataOfIndia(){
+    return this.httpClient.get(environment.lATEST_UPADATE_API);
   }
 
 }

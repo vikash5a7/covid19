@@ -7,18 +7,22 @@
 <mat-drawer-container class="example-container" autosize>
     <mat-drawer #drawer class="example-sidenav" mode="side">
         <mat-accordion>
-            <mat-expansion-panel>
+            <mat-expansion-panel style="    padding-top: 60px">
                 <mat-expansion-panel-header>
-                    Country
+                    Indian State
                 </mat-expansion-panel-header>
-                India
+                <div *ngFor="let region of indiaData">
+                    <button mat-button>
+                  {{region.loc}}
+                </button>
+                </div>
             </mat-expansion-panel>
             <br>
             <mat-expansion-panel>
                 <mat-expansion-panel-header>
-                    Indian State
+                    Country
                 </mat-expansion-panel-header>
-                Indian state- Bihar
+                Country name
             </mat-expansion-panel>
         </mat-accordion>
     </mat-drawer>
