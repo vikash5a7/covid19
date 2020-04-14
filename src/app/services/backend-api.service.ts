@@ -22,5 +22,8 @@ export class BackendApiService {
   public getIndiaData(){
     return this.httpClient.get(this.INDIADATA_API);
   }
+  public getAllCountriesData(){
+    return this.httpClient.get(environment.ALL_COUNTRIES_API);
+  }
 
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { BackendApiService } from '../services/backend-api.service';
 import { World } from '../model/world';
+import * as $ from "jquery";
 
 @Component({
   selector: 'app-navigationbar',

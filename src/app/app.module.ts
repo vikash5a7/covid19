@@ -17,17 +17,19 @@ import { MatListModule } from '@angular/material/list';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { WorldComponent } from './world/world.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import {MatTableModule} from '@angular/material/table';
 import {MatCardModule} from '@angular/material/card';
 import { IndiaComponent } from './india/india.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { DisplaycountriesComponent } from './displaycountries/displaycountries.component';
+import { SearchCountryPipe } from './pipe/search-country.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     NavigationbarComponent,
     WorldComponent,
     IndiaComponent,
-    NavbarComponent,
+    DisplaycountriesComponent,
+    SearchCountryPipe,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +39,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     MatExpansionModule,
     MatRippleModule,
     FormsModule,
+    MatTableModule,
     HttpClientModule,
     MatSidenavModule,
     MatToolbarModule,
