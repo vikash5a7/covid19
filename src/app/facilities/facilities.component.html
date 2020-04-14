@@ -1,1 +1,24 @@
-<p>facilities works!</p>
+<nav class="navbar navbar-light bg-light form-inline sticky-top">
+    <input type="text" class="form-control" [(ngModel)]="SearchTeram1" placeholder="Enter State Name" id="listSearch">
+    <input type="text" class="form-control" [(ngModel)]="SearchTeram" placeholder="Enter city name" id="listSearch">
+</nav>
+
+<div class="card-columns" style="padding-top: 5px;">
+    <div class="card" style="width:300px" *ngFor="let resource of resoucesList| cityFacility:SearchTeram | stateFacility:SearchTeram1">
+        <div class=" card-body ">
+            <h2 class="card-title ">{{resource.state}}</h2>
+            <p class="card-text text-info "> City Name: {{resource.city}}
+            </p>
+            <p class="card-text .text-success"> Phone Number: {{resource.phonenumber}}
+            </p>
+            <p class="card-text .text-success"> Description and provider: {{resource.descriptionandorserviceprovided}}
+            </p>
+            <p class="card-text text-info "> Orgination Name: {{resource.nameoftheorganisation}}
+            </p>
+            <p class="card-text text-info "> Category: {{resource.category}}
+            </p>
+            <p class="card-text .text-dark "> Contact: <a href={{resource.contact}} target="_blank">Click Here</a>
+            </p>
+
+        </div>
+    </div>

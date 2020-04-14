@@ -23,8 +23,4 @@ export class NavigationbarComponent {
     console.log('Data of india-->'+ this.indiaData);
   })
 }
-removeReminder(region) {
-  console.log('State object is' + region );
-  this.worldStatus=false;
-}
 }

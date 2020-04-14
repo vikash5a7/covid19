@@ -31,5 +31,7 @@ export class BackendApiService {
   public getAllDataOfIndia(){
     return this.httpClient.get(environment.lATEST_UPADATE_API);
   }
-
+  public getResouce(){
+    return this.httpClient.get(environment.RESOURCEANDESSENTIAL);
+  }
 }

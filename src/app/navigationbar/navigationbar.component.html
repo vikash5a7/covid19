@@ -6,19 +6,16 @@
         <a class="nav-link" data-toggle="pill" href="#menu1">India</a>
     </li>
     <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#menu3">ESSENTIALS</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#menu4">HELPFUL LINKS</a>
+    </li>
+    <li class="nav-item">
         <a class="nav-link" data-toggle="pill" href="#menu2">PATIENTS IN INDIA</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#menu2">Facitilities</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#menu2">HELPFUL LINKS</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#menu2">ABOUT</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#menu2">ESSENTIALS</a>
+        <a class="nav-link" data-toggle="pill" href="#menu5">ABOUT</a>
     </li>
 </ul>
 <!-- Tab panes -->
@@ -36,5 +33,21 @@
             <app-state-details></app-state-details>
         </div>
     </div>
-    <div class="tab-pane container fade" id="menu2">...</div>
+    <div class="tab-pane container fade" id="menu2">
+        <div style="padding-top: 80px;">
+            <app-patient></app-patient>
+        </div>
+
+    </div>
+    <div class="tab-pane container fade" id="menu3">
+        <div style="padding-top: 80px;">
+            <app-facilities></app-facilities>
+        </div>
+    </div>
+    <div class="tab-pane container fade" id="menu5">
+        <div style="padding-top: 80px;  padding-left: 20%;">
+            <app-about></app-about>
+        </div>
+    </div>
+    <div class="tab-pane container fade" id="menu6">...</div>
 </div>

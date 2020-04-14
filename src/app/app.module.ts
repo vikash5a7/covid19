@@ -23,9 +23,12 @@ import { IndiaComponent } from './india/india.component';
 import { DisplaycountriesComponent } from './displaycountries/displaycountries.component';
 import { SearchCountryPipe } from './pipe/search-country.pipe';
 import { StateDetailsComponent } from './state-details/state-details.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { FacilitiesComponent } from './facilities/facilities.component';
 import { PatientComponent } from './patient/patient.component';
+import { SearchStatePipe } from './pipe/search-state.pipe';
+import { AboutComponent } from './about/about.component';
+import { StateFacilityPipe } from './pipe/state-facility.pipe';
+import { CityFacilityPipe } from './pipe/city-facility.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,9 +38,12 @@ import { PatientComponent } from './patient/patient.component';
     DisplaycountriesComponent,
     SearchCountryPipe,
     StateDetailsComponent,
-    NavbarComponent,
     FacilitiesComponent,
     PatientComponent,
+    SearchStatePipe,
+    AboutComponent,
+    StateFacilityPipe,
+    CityFacilityPipe,
   ],
   imports: [
     BrowserModule,
