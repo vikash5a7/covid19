@@ -14,7 +14,7 @@ export const environment = {
   RAW_API: 'https://api.rootnet.in/covid19-in/stats/testing/raw',
   GLOBAL_API: "https://coronavirus-19-api.herokuapp.com/all",
   ALL_COUNTRIES_API: " https://coronavirus-19-api.herokuapp.com/countries",
-  SPECIFICcOUNTRY_API: 'https://coronavirus-19-api.herokuapp.com/countries/',
+  INDIADATA_API: 'https://coronavirus-19-api.herokuapp.com/countries/india',
 };
 
 /*

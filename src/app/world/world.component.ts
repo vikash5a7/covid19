@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendApiService } from '../services/backend-api.service';
+import { World } from '../model/world';
 
 @Component({
   selector: 'app-world',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./world.component.css']
 })
 export class WorldComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  world:any;
+  constructor(private backendApiService : BackendApiService) {
   }
 
+ ngOnInit() {
+   this.backendApiService.sendGetRequest().subscribe((data)=>{
+     this.world=data;
+   })
+}
 }

@@ -1,5 +1,5 @@
 export class World {
-cases: number;
+  cases: any;
 deaths: number;
 recovered : number;
 }

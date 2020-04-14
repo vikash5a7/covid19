@@ -16,30 +16,35 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { WorldComponent } from './world/world.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 import {MatCardModule} from '@angular/material/card';
-import {FlexLayoutModule} from '@angular/flex-layout';
+import { IndiaComponent } from './india/india.component';
+import { NavbarComponent } from './navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavigationbarComponent,
     WorldComponent,
+    IndiaComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FlexLayoutModule,
     MatButtonModule,
     MatExpansionModule,
     MatRippleModule,
     FormsModule,
     HttpClientModule,
     MatSidenavModule,
-    LayoutModule,
     MatToolbarModule,
     MatIconModule,
     MatListModule,
     MatCardModule,
+    FlexLayoutModule,
+    LayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

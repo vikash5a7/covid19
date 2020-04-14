@@ -4,6 +4,7 @@
 }
 
 .example-sidenav-content {
+    padding-top: 54px;
     display: flex;
     height: 100%;
     align-items: center;
@@ -20,6 +21,6 @@
 
 .wolrd-info {
     padding-left: 200px;
-    padding-top: 50px;
+    padding-top: 80px;
     margin-left: 5px;
 }

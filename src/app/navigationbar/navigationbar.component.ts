@@ -13,10 +13,7 @@ export class NavigationbarComponent {
   constructor(private backendApiService : BackendApiService) {
  }
 ngOnInit() {
-  this.backendApiService.sendGetRequest().subscribe((data: any[])=>{
-    this.world=data;
-    console.log('Total number of case is ' +this.world.cases)
-    console.log(data);
-  })
-}
+
+  }
+
 }

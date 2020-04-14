@@ -1,35 +1,36 @@
-<div>
+<div fxLayoutAlign="center center" style="margin-right: 170px;">
+    <h1>COVID-19 CORONAVIRUS PANDEMIC IN WORLD</h1> <br><br>
 
-    <div class="display">
-        <mat-card>
+</div>
+<div class="flex-container" fxLayoutAlign="center center">
+    <div>
+        <mat-card style="background-color: rgb(181, 204, 226);">
             <mat-card-title>
-                vikash kumar
+                {{world.cases | number:''}}
             </mat-card-title>
 
             <mat-card-content>
-                he is goof boy
+                Corona Virus Cases
             </mat-card-content>
         </mat-card>
     </div>
-    <div class="display">
-        <mat-card>
+    <div>
+        <mat-card style="background-color: rgb(248, 39, 39);">
             <mat-card-title>
-                vikash kumar
+                {{world.deaths | number:''}}
             </mat-card-title>
-
             <mat-card-content>
-                he is goof boy
+                Total Deaths
             </mat-card-content>
         </mat-card>
     </div>
-    <div class="display">
-        <mat-card>
+    <div>
+        <mat-card style="background-color: rgb(129, 235, 115);">
             <mat-card-title>
-                vikash kumar
+                {{world.recovered | number:''}}
             </mat-card-title>
-
             <mat-card-content>
-                he is goof boy
+                Total Recovered
             </mat-card-content>
         </mat-card>
     </div>

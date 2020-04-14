@@ -10,13 +10,17 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class BackendApiService {
 
   private GLOBAL_aPI = environment.GLOBAL_API;
-  private REST_API_SERVER = "https://coronavirus-19-api.herokuapp.com/all";
+  private INDIADATA_API = environment.INDIADATA_API;
   constructor(private httpClient: HttpClient, ) { }
   private httpOtions = {
     headers: new HttpHeaders({ 'content-type': 'application/json' })
   };
+
   public sendGetRequest(){
-    return this.httpClient.get(this.REST_API_SERVER);
+    return this.httpClient.get(this.GLOBAL_aPI);
+  }
+  public getIndiaData(){
+    return this.httpClient.get(this.INDIADATA_API);
   }
 
 }
