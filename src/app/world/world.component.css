@@ -1,7 +1,7 @@
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 170px;
+    padding-left: 40px;
 }
 
 .flex-container>div {

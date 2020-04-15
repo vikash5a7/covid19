@@ -1,36 +1,36 @@
-<div class="container p-1 my-3 border text-center">
+<div class="container p-1 my-3 text-center">
     <h1>COVID-19 CORONAVIRUS PANDEMIC IN WORLD</h1>
     <p>Total Case Around the World</p>
-</div>
-<div class="flex-container justify-content-center" style="align-items: center;">
-    <div>
-        <mat-card style="background-color: rgb(181, 204, 226);">
-            <mat-card-title>
-                {{world.cases | number:''}}
-            </mat-card-title>
-            <mat-card-content>
-                Corona Virus Cases
-            </mat-card-content>
-        </mat-card>
-    </div>
-    <div>
-        <mat-card style="background-color: rgb(248, 39, 39);">
-            <mat-card-title>
-                {{world.deaths | number:''}}
-            </mat-card-title>
-            <mat-card-content>
-                Total Deaths
-            </mat-card-content>
-        </mat-card>
-    </div>
-    <div>
-        <mat-card style="background-color: rgb(129, 235, 115);">
-            <mat-card-title>
-                {{world.recovered | number:''}}
-            </mat-card-title>
-            <mat-card-content>
-                Total Recovered
-            </mat-card-content>
-        </mat-card>
+    <div class="flex-container justify-content-center">
+        <div class="text-center">
+            <mat-card style="background-color: rgb(181, 204, 226);">
+                <mat-card-title>
+                    {{world.cases | number:''}}
+                </mat-card-title>
+                <mat-card-content>
+                    Corona Virus Cases
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div>
+            <mat-card style="background-color: rgb(248, 39, 39);">
+                <mat-card-title>
+                    {{world.deaths | number:''}}
+                </mat-card-title>
+                <mat-card-content>
+                    Total Deaths
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div>
+            <mat-card style="background-color: rgb(129, 235, 115);">
+                <mat-card-title>
+                    {{world.recovered | number:''}}
+                </mat-card-title>
+                <mat-card-content>
+                    Total Recovered
+                </mat-card-content>
+            </mat-card>
+        </div>
     </div>
 </div>

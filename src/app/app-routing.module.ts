@@ -15,8 +15,11 @@ const routes: Routes = [
   path: 'crona-app', component: NavigationbarComponent
 },
 {
+  path: 'helpful-link', component: NavigationbarComponent
+},
+{
   path: '**',
-  component:  NavigationbarComponent
+  component:  PagenotefoundComponent
 }
 ];
 
