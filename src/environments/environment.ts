@@ -17,6 +17,7 @@ export const environment = {
   ALL_COUNTRIES_API: " https://coronavirus-19-api.herokuapp.com/countries",
   INDIADATA_API: 'https://coronavirus-19-api.herokuapp.com/countries/india',
   RESOURCEANDESSENTIAL: 'https://api.covid19india.org/resources/resources.json',
+  DEATHRECOVERIES:'https://api.covid19india.org/deaths_recoveries.json',
 };
 
 /*

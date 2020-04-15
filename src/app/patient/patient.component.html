@@ -1,1 +1,43 @@
-<p>Under Construction.... </p>
+<app-navigationbar></app-navigationbar>
+<div style="padding-top: 70px;">
+    <app-spinner></app-spinner>
+</div>
+<div class="container-sm  text-center">
+    <h4>COVID-19 CORONAVIRUS PANDEMIC IN INDIA</h4>
+    <p>Click on button to see the deatials </p>
+</div>
+<div class="container">
+    <div class="flex-container" style="flex-direction: row; padding-left: 5px; box-sizing: border-box;display: flex;flex-wrap: wrap;">
+        <div *ngFor="let deathAndRecoveries of patientsList">
+            <!-- Button to Open the Modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        </button>
+
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Details</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <p>Serial number: {{deathAndRecoveries.slno}}</p>
+
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

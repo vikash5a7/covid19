@@ -34,4 +34,7 @@ export class BackendApiService {
   public getResouce(){
     return this.httpClient.get(environment.RESOURCEANDESSENTIAL);
   }
+  public deathAndRecoveries(){
+    return this.httpClient.get(environment.DEATHRECOVERIES);
+  }
 }
