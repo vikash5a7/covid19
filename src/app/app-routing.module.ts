@@ -3,26 +3,21 @@ import { Routes, RouterModule } from '@angular/router';
 import { FacilitiesComponent } from './facilities/facilities.component';
 import { PatientComponent } from './patient/patient.component';
 import { NavigationbarComponent } from './navigationbar/navigationbar.component';
+import { PagenotefoundComponent } from './pagenotefound/pagenotefound.component';
 
 
 const routes: Routes = [
   {
-    path: '', redirectTo: 'track',
+    path: '', redirectTo: 'crona-app',
     pathMatch: 'full'
   },
-  {
-    path: 'Facilities', component: FacilitiesComponent
-  },
-  {
-      path: 'Facilities', component: FacilitiesComponent
-  },
-  {
-    path: 'patient', component: PatientComponent
+{
+  path: 'crona-app', component: NavigationbarComponent
 },
 {
-  path: 'track', component: NavigationbarComponent
-},
-
+  path: '**',
+  component:  NavigationbarComponent
+}
 ];
 
 @NgModule({

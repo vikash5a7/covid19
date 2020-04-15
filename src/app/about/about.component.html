@@ -16,6 +16,9 @@
         </div>
     </div>
 </div>
+<div *ngIf="isLoading">
+    <app-spinner></app-spinner>
+</div>
 <div class="container">
     <h3 class="text-primary">Are you official?</h3>
     <p class="text-danger">No</p>

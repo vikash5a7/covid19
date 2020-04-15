@@ -1,8 +1,11 @@
+<div class="container-sm  text-center">
+    <h1>SEARCH YOUR NEAR BY PLACE</h1>
+    <P>MANY PERSON ARE HELPING</P>
+</div>
 <nav class="navbar navbar-light bg-light form-inline sticky-top">
     <input type="text" class="form-control" [(ngModel)]="SearchTeram1" placeholder="Enter State Name" id="listSearch">
     <input type="text" class="form-control" [(ngModel)]="SearchTeram" placeholder="Enter city name" id="listSearch">
 </nav>
-
 <div class="card-columns" style="padding-top: 5px;">
     <div class="card" style="width:300px" *ngFor="let resource of resoucesList| cityFacility:SearchTeram | stateFacility:SearchTeram1">
         <div class=" card-body ">

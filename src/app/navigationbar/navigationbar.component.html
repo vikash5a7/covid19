@@ -6,7 +6,7 @@
         <a class="nav-link" data-toggle="pill" href="#menu1">India</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#menu3">ESSENTIALS</a>
+        <a class="nav-link" data-toggle="pill" href="#menu3">NEED HELP</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" data-toggle="pill" href="#menu4">HELPFUL LINKS</a>
@@ -22,32 +22,37 @@
 <div class="tab-content">
     <div class="tab-pane container active" id="home">
         <div class="wolrd-info">
+            <app-spinner></app-spinner>
             <app-world></app-world>
             <app-india></app-india>
             <app-displaycountries></app-displaycountries>
         </div>
     </div>
     <div class="tab-pane container fade" id="menu1">
-        <div style="padding-top: 80px;">
-            <app-india></app-india>
-            <app-state-details></app-state-details>
-        </div>
+        <app-spinner></app-spinner>
+        <app-india></app-india>
+        <app-state-details></app-state-details>
     </div>
     <div class="tab-pane container fade" id="menu2">
         <div style="padding-top: 80px;">
+            <app-spinner></app-spinner>
             <app-patient></app-patient>
         </div>
 
     </div>
     <div class="tab-pane container fade" id="menu3">
-        <div style="padding-top: 80px;">
-            <app-facilities></app-facilities>
-        </div>
+        <app-spinner></app-spinner>
+        <app-facilities>
+        </app-facilities>
     </div>
     <div class="tab-pane container fade" id="menu5">
         <div style="padding-top: 80px;  padding-left: 20%;">
+
             <app-about></app-about>
         </div>
     </div>
-    <div class="tab-pane container fade" id="menu6">...</div>
+    <div class="tab-pane container fade" id="menu4">
+        <app-spinner></app-spinner>
+
+    </div>
 </div>

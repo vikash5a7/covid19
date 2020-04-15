@@ -29,6 +29,8 @@ import { SearchStatePipe } from './pipe/search-state.pipe';
 import { AboutComponent } from './about/about.component';
 import { StateFacilityPipe } from './pipe/state-facility.pipe';
 import { CityFacilityPipe } from './pipe/city-facility.pipe';
+import { PagenotefoundComponent } from './pagenotefound/pagenotefound.component';
+import { SpinnerComponent } from './spinner/spinner.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +46,8 @@ import { CityFacilityPipe } from './pipe/city-facility.pipe';
     AboutComponent,
     StateFacilityPipe,
     CityFacilityPipe,
+    PagenotefoundComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,

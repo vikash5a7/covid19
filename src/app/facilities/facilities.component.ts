@@ -12,6 +12,7 @@ export class FacilitiesComponent implements OnInit {
   resoucesList:[];
   SearchTeram: String;
   SearchTeram1: String;
+  isLoading:boolean;
   resource: Resources=new Resources();
   constructor(private backendApiService : BackendApiService) {
   }
