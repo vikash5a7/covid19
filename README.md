@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## live server
 
-Navigate to `http://chronatracker.epizy.com/?i=1`. The app will automatically load
+Navigate to `http://chronatracker.epizy.com/`. The app will automatically load
 
 ## Code scaffolding
 
