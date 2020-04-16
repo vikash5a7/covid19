@@ -38,6 +38,7 @@ import { LaoderComponent } from './laoder/laoder.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { OrderByPipe } from './pipe/order-by.pipe';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,6 +61,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     PatientDetailsComponent,
     LaoderComponent,
     OrderByPipe,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
