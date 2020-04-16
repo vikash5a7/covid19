@@ -1,24 +1,30 @@
-<nav class="navbar navbar-light bg-light form-inline">
-    <input type="text" class="form-control" [(ngModel)]="SearchTeram" placeholder="Enter State Name" id="listSearch">
-    <p>Last Refreshed {{data.lastRefreshed | date :'short'}}</p>
-    <p>last Origin Update {{data.lastOriginUpdate | date :'short'}}</p>
-</nav>
+<div *ngIf="isLoading">
+    <app-laoder></app-laoder>
+</div>
+<div class="container-sm" *ngIf="!isLoading">
+    <nav class="navbar navbar-light bg-light form-inline">
+        <input type="text" class="form-control" [(ngModel)]="SearchTeram" placeholder="Enter State Name" id="listSearch">
+        <p>Last Refreshed {{data.lastRefreshed | date :'short'}}</p>
+        <p>last Origin Update {{data.lastOriginUpdate | date :'short'}}</p>
+    </nav>
 
-<div class="card-columns" style="padding-top: 5px;">
-    <div class="card" style="width:300px" *ngFor="let region of indiaData | searchState : SearchTeram">
-        <div class="card-body">
-            <h2 class="card-title">{{region.loc}}</h2>
-            <p class="card-text text-info"> Confirmed Cases Indian : {{region.confirmedCasesIndian}}
-            </p>
-            <p class="card-text text-primary">Discharged : {{region.discharged}}
-            </p>
-            <p class="card-text text-danger">Deaths : {{region.deaths}}
-            </p>
-            <p class="card-text ">Confirmed Cases Foreign : {{region.confirmedCasesForeign}}
-            </p>
-            <h2 class="card-text text-danger">Total Confirmed: {{region.totalConfirmed}}
-            </h2>
-            <a href="#" class="btn btn-primary">Distric Wise</a>
+    <div class="card-columns" style="padding-top: 5px;">
+        <div class="card" style="width:300px" *ngFor="let region of indiaData | searchState : SearchTeram">
+            <div class="card-body">
+                <h2 class="card-title">{{region.loc}}</h2>
+                <p class="card-text text-info"> Confirmed Cases Indian : {{region.confirmedCasesIndian}}
+                </p>
+                <p class="card-text text-primary">Discharged : {{region.discharged}}
+                </p>
+                <p class="card-text text-danger">Deaths : {{region.deaths}}
+                </p>
+                <p class="card-text ">Confirmed Cases Foreign : {{region.confirmedCasesForeign}}
+                </p>
+                <h2 class="card-text text-danger">Total Confirmed: {{region.totalConfirmed}}
+                </h2>
+                <a href="#" class="btn btn-primary">Distric Wise</a>
+            </div>
         </div>
     </div>
+
 </div>

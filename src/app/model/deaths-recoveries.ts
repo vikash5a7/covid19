@@ -1,17 +1,17 @@
 export class DeathsRecoveries {
-  agebracket: number;
-			city: String;
-			date: Date;
-			district: string;
-			gender: String;
-			nationality: String;
-			notes: String;
-			patientnumbercouldbemappedlater: number;
-			patientstatus: String;
-			slno: number;
-			source1: String;
-			source2: String;
-			source3: String;
-			state: String;
+  agebracket: any;
+			city: any;
+			date: any;
+			district: any;
+			gender: any;
+			nationality: any;
+			notes: any;
+			patientnumbercouldbemappedlater: any;
+			patientstatus: any;
+			slno: any;
+			source1: any;
+			source2: any;
+			source3: any;
+			state: any;
 			statecode:String;
 }

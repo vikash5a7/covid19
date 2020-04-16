@@ -1,0 +1,42 @@
+<div class="container">
+    <mat-card mat-dialog-content fxLayout="column" fxFlex>
+        <mat-card-title>
+            Serial Number {{deathAndRecoveries.slno}}
+        </mat-card-title>
+        <mat-card-content class="container text-center">
+            <div *ngIf="deathAndRecoveries.nationality !=''">
+                <h3>Nationality: {{deathAndRecoveries.nationality}}</h3>
+            </div>
+            <div *ngIf="deathAndRecoveries.state !=''">
+                <h3>State name: {{deathAndRecoveries.state}}</h3>
+            </div>
+            <div *ngIf="deathAndRecoveries.city !=''">
+                <h3>City name: {{deathAndRecoveries.city}}</h3>
+            </div>
+            <div *ngIf="deathAndRecoveries.agebracket !=''">
+                <h3>Age {{deathAndRecoveries.agebracket}}</h3>
+            </div>
+            <div *ngIf="deathAndRecoveries.gender === 'M'">
+                <h3>Gender: Male</h3>
+            </div>
+            <div *ngIf="deathAndRecoveries.gender === 'F'">
+                <h3>Gender: Female</h3>
+            </div>
+            <div *ngIf="deathAndRecoveries.date !=''">
+                <h3>Date: {{deathAndRecoveries.date}}</h3>
+            </div>
+            <div *ngIf="deathAndRecoveries.patientstatus !=''">
+                <h3>Patient Status: {{deathAndRecoveries.patientstatus}}</h3>
+            </div>
+            <div *ngIf="deathAndRecoveries.notes !=''">
+                <h3>Notes: {{deathAndRecoveries.notes}}</h3>
+            </div>
+        </mat-card-content>
+        <div mat-dialog-actions>
+            <div class="container text-right ">
+                <button mat-raised-button (click)="close()">close</button>
+            </div>
+        </div>
+    </mat-card>
+
+</div>

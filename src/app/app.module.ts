@@ -33,6 +33,11 @@ import { PagenotefoundComponent } from './pagenotefound/pagenotefound.component'
 import { SpinnerComponent } from './spinner/spinner.component';
 import { HelfullinkComponent } from './helfullink/helfullink.component';
 import { HomeComponent } from './home/home.component';
+import { PatientDetailsComponent } from './patient-details/patient-details.component';
+import { LaoderComponent } from './laoder/laoder.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { OrderByPipe } from './pipe/order-by.pipe';
+import {MatTooltipModule} from '@angular/material/tooltip';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,6 +57,9 @@ import { HomeComponent } from './home/home.component';
     SpinnerComponent,
     HelfullinkComponent,
     HomeComponent,
+    PatientDetailsComponent,
+    LaoderComponent,
+    OrderByPipe,
   ],
   imports: [
     BrowserModule,
@@ -70,6 +78,9 @@ import { HomeComponent } from './home/home.component';
     MatCardModule,
     FlexLayoutModule,
     LayoutModule,
+    MatDialogModule,
+    MatCardModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

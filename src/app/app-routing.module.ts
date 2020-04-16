@@ -8,6 +8,7 @@ import { IndiaComponent } from './india/india.component';
 import { HomeComponent } from './home/home.component';
 import { HelfullinkComponent } from './helfullink/helfullink.component';
 import { AboutComponent } from './about/about.component';
+import { LaoderComponent } from './laoder/laoder.component';
 
 
 const routes: Routes = [
@@ -31,6 +32,9 @@ const routes: Routes = [
 },
 {
   path: 'about', component: AboutComponent
+},
+{
+  path: 'loading', component: LaoderComponent
 },
 {
   path: '**',

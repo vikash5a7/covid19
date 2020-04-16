@@ -1,83 +1,89 @@
 <app-navigationbar></app-navigationbar>
-<div style="padding-top: 70px;">
-    <app-spinner></app-spinner>
-</div>
-<div class="container-sm border text-center">
-    <h1>COVID-19 CORONAVIRUS PANDEMIC IN INDIA</h1>
-</div>
-<div class="flex-container" fxLayoutAlign="center center">
-    <div>
-        <mat-card style="background-color: rgb(181, 204, 226);">
-            <mat-card-title>
-                {{india.cases | number:''}}
-            </mat-card-title>
-
-            <mat-card-content>
-                Corona Virus Cases
-            </mat-card-content>
-        </mat-card>
-    </div>
-    <div>
-        <mat-card style="background-color: rgb(248, 39, 39);">
-            <mat-card-title>
-                {{india.deaths | number:''}}
-            </mat-card-title>
-            <mat-card-content>
-                Total Deaths
-            </mat-card-content>
-        </mat-card>
-    </div>
-    <div>
-        <mat-card style="background-color: rgb(129, 235, 115);">
-            <mat-card-title>
-                {{india.recovered | number:''}}
-            </mat-card-title>
-            <mat-card-content>
-                Total Recovered
-            </mat-card-content>
-        </mat-card>
-    </div>
-    <div>
-        <mat-card style="background-color: rgb(230, 180, 45);">
-            <mat-card-title>
-                {{india.active | number:''}}
-            </mat-card-title>
-            <mat-card-content>
-                Total Active case
-            </mat-card-content>
-        </mat-card>
-    </div>
-    <div>
-        <mat-card style="background-color: rgb(231, 224, 121);">
-            <mat-card-title>
-                {{india.todayCases | number:''}}
-            </mat-card-title>
-            <mat-card-content>
-                Today New Cases
-            </mat-card-content>
-        </mat-card>
-    </div>
-    <div>
-        <mat-card style="background-color: rgb(231, 128, 9);">
-            <mat-card-title>
-                {{india.todayDeaths | number:''}}
-            </mat-card-title>
-            <mat-card-content>
-                Total Today Death
-            </mat-card-content>
-        </mat-card>
-    </div>
-    <div>
-        <mat-card style="background-color: rgb(140, 141, 236);">
-            <mat-card-title>
-                {{india.totalTests | number:''}}
-            </mat-card-title>
-            <mat-card-content>
-                Total Test in india
-            </mat-card-content>
-        </mat-card>
-    </div>
+<div *ngIf="isLoading">
+    <app-laoder></app-laoder>
 </div>
 <div class="container">
-    <app-state-details></app-state-details>
+    <div style="padding-top: 70px;">
+        <app-spinner></app-spinner>
+    </div>
+    <div class="container-sm border text-center">
+        <h1>COVID-19 CORONAVIRUS PANDEMIC IN INDIA</h1>
+    </div>
+    <div class="flex-container" fxLayoutAlign="center center">
+        <div>
+            <mat-card style="background-color: rgb(181, 204, 226);">
+                <mat-card-title>
+                    {{india.cases | number:''}}
+                </mat-card-title>
+
+                <mat-card-content>
+                    Corona Virus Cases
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div>
+            <mat-card style="background-color: rgb(248, 39, 39);">
+                <mat-card-title>
+                    {{india.deaths | number:''}}
+                </mat-card-title>
+                <mat-card-content>
+                    Total Deaths
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div>
+            <mat-card style="background-color: rgb(129, 235, 115);">
+                <mat-card-title>
+                    {{india.recovered | number:''}}
+                </mat-card-title>
+                <mat-card-content>
+                    Total Recovered
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div>
+            <mat-card style="background-color: rgb(230, 180, 45);">
+                <mat-card-title>
+                    {{india.active | number:''}}
+                </mat-card-title>
+                <mat-card-content>
+                    Total Active case
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div>
+            <mat-card style="background-color: rgb(231, 224, 121);">
+                <mat-card-title>
+                    {{india.todayCases | number:''}}
+                </mat-card-title>
+                <mat-card-content>
+                    Today New Cases
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div>
+            <mat-card style="background-color: rgb(231, 128, 9);">
+                <mat-card-title>
+                    {{india.todayDeaths | number:''}}
+                </mat-card-title>
+                <mat-card-content>
+                    Total Today Death
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div>
+            <mat-card style="background-color: rgb(140, 141, 236);">
+                <mat-card-title>
+                    {{india.totalTests | number:''}}
+                </mat-card-title>
+                <mat-card-content>
+                    Total Test in india
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+    <div class="container">
+        <app-state-details></app-state-details>
+    </div>
+
 </div>

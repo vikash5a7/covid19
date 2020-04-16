@@ -12,15 +12,29 @@ export class FacilitiesComponent implements OnInit {
   resoucesList:[];
   SearchTeram: String;
   SearchTeram1: String;
-  isLoading:boolean;
+  isLoading:false;
   resource: Resources=new Resources();
   constructor(private backendApiService : BackendApiService) {
   }
 
  ngOnInit() {
-   this.backendApiService.getResouce().subscribe((data:any)=>{
-    this.resoucesList=data.resources;
-     console.log("resouce is  " +this.resoucesList)
-   })
+  this.gettingAllTheResources();
+}
+
+
+gettingAllTheResources() {
+  this.backendApiService.getResouce().subscribe(
+   data => this.handleResponse(data),
+   error => this.handleError(error)
+ );
+
+}
+handleError(error: any): void {
+  this.isLoading = false;
+  console.log(error);
+}
+handleResponse(data: any): void {
+  this.resoucesList=data.resources;
+  this.isLoading = false;
 }
 }

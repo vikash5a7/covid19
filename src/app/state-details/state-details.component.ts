@@ -14,14 +14,28 @@ export class StateDetailsComponent implements OnInit {
   indiaData: [];
   SearchTeram : String;
   details: any;
+  isLoading = false;
   constructor(private backendApiService : BackendApiService) {
   }
   ngOnInit() {
-    this.backendApiService.getAllDataOfIndia().subscribe((data:any)=>{
-      this.indiaData = data.data.regional;
-      this.data = data;
-      console.log('Data of india-->'+ this.indiaData);
-      console.log("this date is---->" + this.details)
-    })
+    this.gettingAllTheDAtaOFIndia();
+
+  }
+
+  gettingAllTheDAtaOFIndia()
+  {
+    this.isLoading = true;
+    this.backendApiService.getAllDataOfIndia().subscribe(
+     data => this.handleResponse(data),
+     error => this.handleError(error)
+    );
+  }
+  handleError(error: any): void {
+    console.log(error);
+  }
+  handleResponse(data: any): void {
+    this.indiaData = data.data.regional;
+    this.data = data;
+    this.isLoading=false;
   }
 }
